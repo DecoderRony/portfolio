@@ -53,7 +53,12 @@ const Layout = () => {
         </GridItem>
       </Show>
       <Show above="lg">
-        <GridItem area={gridAreas.sidepanel} pl={10}>
+        <GridItem
+          area={gridAreas.sidepanel}
+          height="100%"
+          overflow="hidden"
+          pl={10}
+        >
           <Flex
             height="100%"
             direction="column"
@@ -71,7 +76,12 @@ const Layout = () => {
           </Flex>
         </GridItem>
       </Show>
-      <GridItem area={gridAreas.mainarea} pr={10}>
+      <GridItem
+        area={gridAreas.mainarea}
+        pr={10}
+        height="100%"
+        overflow="hidden"
+      >
         <Canvas />
       </GridItem>
     </Grid>

@@ -4,7 +4,7 @@ import ColorModeSwitch from "./ColorModeSwitch";
 
 const Canvas = () => {
   return (
-    <Card borderRadius="xl" boxShadow="2xl" height="100%" p={0}>
+    <Card borderRadius="xl" boxShadow="2xl" height="100%" overflow="auto" p={0}>
       <Box position="absolute" right={0} mt={4} mr={5}>
         <ColorModeSwitch />
       </Box>
