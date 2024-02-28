@@ -1,13 +1,20 @@
-import { ExperienceDetail } from "./Experience";
+import { Text } from "@chakra-ui/react";
+import { Experience } from "../consts";
+import TechStack from "./TechStack";
 
 interface ExperienceDetailsProps {
-  details: ExperienceDetail[];
-  index: number | undefined;
+  experience?: Experience;
 }
 
-const ExperienceDetails = ({ details, index }: ExperienceDetailsProps) => {
-  if (index === undefined) return;
-  return <div>{details[index].description}</div>;
+const ExperienceDetails = ({ experience }: ExperienceDetailsProps) => {
+  if (experience === undefined) return;
+  return (
+    <>
+      <Text mb={1}>{experience.description}</Text>
+      <Text mb={2}>Technologies:</Text>
+      <TechStack technologies={experience.technology} />
+    </>
+  );
 };
 
 export default ExperienceDetails;
