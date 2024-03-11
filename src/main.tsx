@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes.tsx";
 import theme from "./theme.ts";
+import "overlayscrollbars/overlayscrollbars.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
